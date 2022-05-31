@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="enter your name">
+    <input id="num" type="number" placeholder="enter your age">
+    <select name="Select Gender" id="gen">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+    </select>
+<button id="sign" onClick="signup()">Sign up</button>
+    <h1 id="Name">Display Name</h1>
+    <h1 id="Age">Display Age</h1>
+    <h1 id="Gender">Display Gender</h1>
+</body>
+</html>
+<script>
+    function signup(){
+        let x=document.getElementById("name").value;
+        let y=document.getElementById("num").value;
+        let z=document.getElementById("gen").value;
+        document.getElementById("Name").innerText=x;
+        document.getElementById("Age").innerText=y;
+        document.getElementById("Gender").innerText=z;
+    }
+    
+
+</script>

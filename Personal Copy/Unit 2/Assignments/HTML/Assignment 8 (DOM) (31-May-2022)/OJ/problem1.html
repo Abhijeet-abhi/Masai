@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="first" type="number" placeholder="enter number">
+  <input id="second" type="number" placeholder="enter number">
+  <button onClick="add()">Addion</button>
+  <button onClick="sub()">Substraction</button>
+  <button onClick="div()">Division</button>
+  <button onClick="mul()">Multipication</button>
+  <p id="res">Display result</p>
+</body>
+</html>
+<script>
+    
+  function add(){
+    let firstNum=+(document.getElementById("first").value);
+    let secondNum=+(document.getElementById("second").value);
+    document.getElementById("res").innerText=firstNum + secondNum;
+
+  }
+  function sub(){
+    let firstNum=+(document.getElementById("first").value);
+    let secondNum=+(document.getElementById("second").value);
+   document.getElementById("res").innerText=firstNum-secondNum;
+
+  }
+  function mul(){
+    let firstNum=+(document.getElementById("first").value);
+    let secondNum=+(document.getElementById("second").value);
+   document.getElementById("res").innerText=firstNum*secondNum;
+
+  }
+  function div(){
+    let firstNum=+(document.getElementById("first").value);
+    let secondNum=+(document.getElementById("second").value);
+   document.getElementById("res").innerText=firstNum/secondNum;
+
+  }
+</script>
