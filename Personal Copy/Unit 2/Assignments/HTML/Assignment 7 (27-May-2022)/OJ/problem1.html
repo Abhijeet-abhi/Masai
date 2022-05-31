@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: yellow;
+      }
+      .main > div {
+        padding-left: 20px;
+        font-size: 30px;
+      }
+
+      .inner {
+        display: grid;
+        gap: 50px;
+        margin-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 230px);
+        grid-template-areas:
+          "left right"
+          "left right";
+      }
+      .inner > div {
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 30px;
+      }
+      .inner > div:first-child {
+        background-color: red;
+        grid-area: left;
+      }
+      .inner > div:last-child {
+        background-color: greenyellow;
+        grid-area: right;
+      }
+
+      @media all and (min-width:480px) and (max-width:720px){
+        .inner{
+            display: grid;
+            gap:30px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            grid-template-areas:"left"
+            "right";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>Navigation</div>
+    </div>
+    <div class="inner">
+      <div>LEFT BOX</div>
+      <div>RIGHT BOX</div>
+    </div>
+  </body>
+</html>

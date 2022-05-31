@@ -1,0 +1,10 @@
+let a = 2;
+let b = 3;
+let sum= a+b;
+console.log("sum is ", sum);
+let diff = a-b;
+console.log("Diff is ", diff);
+let prod = a*b;
+console.log("prod is ", prod);
+let div = a/b;
+console.log("Div is ", div);

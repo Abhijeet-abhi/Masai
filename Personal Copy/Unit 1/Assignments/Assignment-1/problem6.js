@@ -1,0 +1,10 @@
+let name = Abhijeet Ojha;
+let age = 23;
+let gender= Male;
+console.log("sum is ", sum);
+let has_driving_license = a-b;
+console.log("Diff is ", diff);
+let prod = a*b;
+console.log("prod is ", prod);
+let div = a/b;
+console.log("Div is ", div);

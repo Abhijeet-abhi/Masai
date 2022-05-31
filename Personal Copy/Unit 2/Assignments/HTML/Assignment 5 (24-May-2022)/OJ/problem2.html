@@ -1,0 +1,293 @@
+<html>
+
+<head>
+    <style>
+        /* Menu Start */
+        .menu {
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            /* padding-left: 50px; */
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .menu>div:first-child {
+            /* border: 1px solid blue; */
+            color: white;
+            background-color: #6c6ce6;
+            width: 12%;
+            height: 50px;
+            display: flex;
+            margin-left: 30px;
+            justify-content: center;
+            align-items: center;
+            /* height:50px; */
+
+        }
+
+        .menu>div:last-child {
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 130px;
+            width: 40%;
+            height: 50px;
+        }
+
+        /* Body Start */
+        .body {
+            /* border: 1px solid red; */
+            width: 95%;
+            height: 500px;
+            display: flex;
+        }
+
+        .body>div:first-child {
+            /* border: 1px solid blue; */
+            width: 35%;
+            margin-left: 30px;
+
+        }
+
+        .body>div:last-child {
+            /* border: 1px solid purple; */
+            width: 57%;
+            height: 500px;
+            margin-left: 30px;
+        }
+
+        .body>div>p:first-child {
+            font-size: 13px;
+            font-weight: bold;
+            color: #4a85fc;
+        }
+
+        .body>div>p:nth-child(2) {
+            font-size: 35px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .body>div>p:nth-child(3),
+        p:nth-child(4) {
+            width: 90%;
+            font-size: 15px;
+            color: grey;
+        }
+
+        /* Box in the box-Youtube */
+        .body>div:first-child>div {
+            display: flex;
+            width: 100%;
+        }
+
+        .body>div:first-child>div>p {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        .body>div:first-child>div>img {
+            width: 200px;
+            height: 110px;
+        }
+
+        /* right side box  */
+        .body>div:nth-child(2)>div:nth-child(1) {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .body>div:nth-child(2)>div:nth-child(2) {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        /* box  */
+        .body>div:nth-child(2)>div:nth-child(1) {
+            /* border: 1px solid blue; */
+            width: 90%;
+            height: 230px;
+            margin: auto;
+
+        }
+
+        .body>div:nth-child(2)>div:nth-child(2) {
+            /* border: 1px solid blue; */
+            width: 90%;
+            height: 230px;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+
+        /* Inner border 1 */
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(1) {
+            /* border: 1px solid pink; */
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 18px;
+            width: 35%;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+            /* border: 1px solid pink; */
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 18px;
+            width: 35%;
+        }
+
+        /* inner border 2 */
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+            /* border: 1px solid pink; */
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 18px;
+            width: 35%;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+            /* border: 1px solid pink; */
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 18px;
+            width: 35%;
+        }
+
+        /* little logo  */
+        /* Inner border 1 img */
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Inner border 2 img */
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* text alignments */
+        h3 {
+            width: 80%;
+        }
+
+        /* Inner border 1 p */
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>p {
+            width: 70%;
+            color: grey;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>p {
+            width: 70%;
+            color: grey;
+        }
+
+        /* Inner border 2 p */
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>p {
+            width: 70%;
+            color: grey;
+        }
+
+        .body>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p {
+            width: 70%;
+            color: grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div>
+            <h2>StudyLab</h2>
+        </div>
+        <div>
+            <div>
+                <h4>Home</h4>
+            </div>
+            <div>
+                <h4>About</h4>
+            </div>
+            <div>
+                <h4>Course</h4>
+            </div>
+            <div>
+                <h4>Instructor</h4>
+            </div>
+            <div>
+                <h4>Blog</h4>
+            </div>
+            <div>
+                <h4>Contact</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="body">
+        <div>
+            <p>WELCOME TO STUDYLAB</p>
+            <p>We Are StudyLab An Online Learning Center</p>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p>Far far away,behind the word mountains,far from the countries Vokalia and Consonantia,there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+            <div>
+                <img
+                    src="https://miro.medium.com/max/1400/1*MY6MzUyA0Z1nsb_e9zzmjg.jpeg" ,alt="Error"/>
+                <p>Learn anything from StudyLab, Watch video</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <img src="https://www.absorblms.com/uploads/icons/526517_icon-homepage-stat-users.svg" ,
+                        alt="Error" />
+                    <h3>Top Quality Content</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://www.absorblms.com/uploads/icons/526526_icon-homepage-stat-clients.svg" ,
+                        alt="Error" />
+                    <h3>Highly Skilled Instructor</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.absorblms.com/uploads/icons/526543_icon-homepage-stat-countries.svg" ,
+                        alt="Error" />
+                    <h3>World Class and Quiz</h3>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://www.absorblms.com/uploads/icons/526550_icon-homepage-stat-awards.svg" ,
+                        alt="Error" />
+                    <h3>Get Certified</h3>
+                    <p>A small river named Duden flows by their
+                        place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
